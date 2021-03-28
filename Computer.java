@@ -1,15 +1,7 @@
-package week1.day1;
+package org.system;
 
 public class Computer {
-int memory = 16;
-String brand = "DELL";
-public void cpu (String core) {
-	System.out.println("You wish to buy a..... \n\t"+brand+ " system with "+core );
-}
-public boolean isConvertible() {
-	return false;
-}
-public String storage() {
-	return "1TB";
+public void computerModel() {
+	System.out.println("Model is HP 24-dp0813in AiO PC");
 }
 }
