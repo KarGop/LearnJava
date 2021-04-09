@@ -26,8 +26,7 @@ public class occurrenceOfEachCharacter {
 	      System.out.println(map);
 		}
 	public static void main(String[] args) {
-		characterCount("karthika");
-		characterCount("Hello World!");
-		characterCount("welcome to Selenium automation");
+		characterCount("Hello World!"); //{!=1, r=1, d=1, e=1, w=1, h=1, l=3, o=2}
+		characterCount("welcome to Selenium automation");  //{a=2, c=1, s=1, t=3, e=4, u=2, w=1, i=2, l=2, m=3, n=2, o=4}
 	}
 	}	
