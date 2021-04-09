@@ -23,7 +23,7 @@ public class removeDuplicates {
 		//Check the dupCharSet elements and remove those in the charSet
 		charSet.removeAll(dupCharSet);
 		//Iterate using charSet
-		System.out.println("After removing duplicate elements :");
+		System.out.println("After removing duplicate elements :"); //ylIndi
 		for (Character eachCh : charSet) {
 			if (eachCh!=' ') {
 				System.out.print(eachCh);
