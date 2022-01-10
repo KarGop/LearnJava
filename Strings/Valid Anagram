@@ -1,0 +1,25 @@
+*/
+Link : https://leetcode.com/problems/valid-anagram/
+
+Example:
+
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+/*
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if(s.length()==t.length() && s!=null && t!=null){
+            s= s.toLowerCase();
+            t= t.toLowerCase(); 
+            char[] char1 = s.toCharArray();
+            char[] char2 = t.toCharArray();    
+            Arrays.sort(char1);
+            Arrays.sort(char2);     
+            boolean result  = Arrays.equals(char1, char2);     
+            return (result);
+        }
+        return false;
+    }
+}
