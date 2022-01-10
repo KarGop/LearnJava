@@ -1,0 +1,30 @@
+*/
+Link: https://leetcode.com/problems/reverse-words-in-a-string/
+
+Example:
+
+Input: s = "a good   example"
+Output: "example good a"
+/*
+
+class Solution {
+   public String reverseWords(String s)
+{
+	String[] words = s.split(" ");
+	StringBuilder result = new StringBuilder(words.length); //String in Java is immutable and if we try appending a new word to the result, it will lead us to extremely inefficient use of memory.
+     
+	for (int i = words.length - 1; i >= 0; i--)
+	{
+		if (words[i].length() != 0)
+		{
+			if (result.length() != 0)
+			{
+				result.append(" ");
+			}
+			result.append(words[i]);
+		}
+	}
+
+	return result.toString(); //we have to return String rather than StringBuilder
+}
+}
